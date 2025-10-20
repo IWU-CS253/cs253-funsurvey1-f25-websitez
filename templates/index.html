@@ -1,5 +1,6 @@
 {% extends "layout.html" %}
 {% block body %}
+
     <h2>Survey Data</h2>
 
     <ul>
@@ -9,12 +10,14 @@
         <li><b>Date/Time most recent response</b>: {{ last }}</li>
     </ul>
 
+
+
     <hr>
     <h2>Survey Questions</h2>
     <ul>
     {% for key, value in label_dict.items() %}
         {%  if key != "Timestamp" %}
-            <li><b>{{ key }}</b>: {{ value }}</li>
+            <li><a href="{{ url_for(key) }}"><b>{{ key }}</b></a> {{ value }}</li>
         {%  endif %}
     {%  endfor %}
     </ul>
