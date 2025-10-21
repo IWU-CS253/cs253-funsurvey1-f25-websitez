@@ -1,14 +1,21 @@
 {% extends "layout.html" %}
 {% block body %}
 
-    <h2>Survey Data</h2>
 
-    <ul>
-        <li><b>You can take the survey <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWw-znStt5iF2Dc7eIoXNn24Ulxhm9fEDVggtAxoAyXLfyIA/viewform">here</a>.</b></li>
-        <li><b>Total responses submitted</b>: {{ responses }} </li>
-        <li><b>Date/Time first response</b>: {{ first }}</li>
-        <li><b>Date/Time most recent response</b>: {{ last }}</li>
-    </ul>
+    <div class="card m-4">
+    <div class="card-body">
+
+
+    <h2 class="card-title mb-3">Survey Data</h2>
+
+        <ul class="row">
+            <li class="col"><b>You can take the survey <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWw-znStt5iF2Dc7eIoXNn24Ulxhm9fEDVggtAxoAyXLfyIA/viewform">here</a>.</b></li>
+            <li class="col"><b>Total responses submitted</b>: {{ responses }} </li>
+            <li class="col"><b>Date/Time first response</b>: {{ first }}</li>
+            <li class="col"><b>Date/Time most recent response</b>: {{ last }}</li>
+        </ul>
+    </div>
+    </div>
 
 
 
