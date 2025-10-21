@@ -259,7 +259,7 @@ def areacode():
                            qtext=label_dict[col_label],
                            descrip=descriptives_html(df, col_label),
                            value_counts=valuecount_html(df, col_label),
-                           chart='data:image/png;base64,' + generate_countplot(df, col_label))
+                           chart='data:image/png;base64,' + textcount_html(df, col_label))
 
 
 @app.route('/pets')
